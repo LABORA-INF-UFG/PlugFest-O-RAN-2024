@@ -103,7 +103,6 @@ sudo nano /etc/netplan/00-installer-config.yaml
 ```
 Modify the file so that it looks as this:
 Abaixo está um exemplo do arquivo de configuração `config.yml` usado em nosso projeto:
-
 ```yaml
 network:
   version: 2
@@ -174,6 +173,18 @@ Mask=255.255.255.0
 Once this is done, modify the network configuration file to receive dynamic IP.
 ```bash
 sudo nano /etc/netplan/00-installer-config.yaml
+```
+Delete the previous text in the file and add the following text:
+```yaml
+network:
+  ethernets:
+    eth0:
+      dhcp4: true
+  version: 2
+```
+Now, update your network settings:
+```bash
+sudo netplan apply
 ```
 
 
