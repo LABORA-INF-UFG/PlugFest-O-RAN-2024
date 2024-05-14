@@ -54,7 +54,7 @@ Below is the XML file for creating the default network used in the blueprints pr
 </p>
 </blockquote>
 
-Creating a VM instance from the virt-install command:
+## Creating a VM instance from the virt-install command:
 ```bash
 virt-install --name <VM_name> –vcpus <vCPUs_quantity> --memory <memory_in_MBs> --disk size=<storage_in_GB> --cdrom <path_to_iso_ubuntu_server_20.04>
 ```
@@ -64,7 +64,7 @@ virt-install --name <VM_name> –vcpus <vCPUs_quantity> --memory <memory_in_MBs>
 </p>
 </blockquote>
 
-Operating system installation
+## Operating system installation
 
 In the language, select “English” and use your keyboard layout.
 Go through the next steps, and do not update the installer (if asked).
@@ -77,7 +77,13 @@ In “Guided storage configuration”, select the “Custom storage layout” op
 After completing the partition configuration, create the operating system's default user. The user must be called **"openran-br"** and have the password **"openran-br"**. 
 Finally, activate the "Install OpenSSH server" option, proceed twice, and wait for the system to be installed.
 
+## Configurações adicionais na VM
 
+1. Updating the repository list
+```bash
+sudo apt update
+sudo apt upgrade
+```
 
 
 
