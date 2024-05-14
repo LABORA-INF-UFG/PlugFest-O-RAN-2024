@@ -147,8 +147,33 @@ Now, restart the machine:
 ```bash
 sudo reboot
 ```
+**4. Configuring dummy interfaces for Kubernetes cluster configuration**
+Create a new interface file using the command:
+```bash
+sudo nano /etc/systemd/network/bpi.netdev
+```
+Add the following text to the file:
+```bash
+[NetDev]
+Name=bpi
+Kind=dummy
+```
+Create a new network file using the command:
+```bash
+sudo nano  /etc/systemd/network/bpi.network
+```
+Add the following text to the file:
+```bash
+[Match]
+Name=bpi
 
-
-
+[Network]
+Address=172.30.0.174
+Mask=255.255.255.0
+```
+Once this is done, modify the network configuration file to receive dynamic IP.
+```bash
+sudo nano /etc/netplan/00-installer-config.yaml
+```
 
 
