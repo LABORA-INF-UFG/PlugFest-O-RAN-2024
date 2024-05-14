@@ -64,5 +64,11 @@ virt-install --name <VM_name> –vcpus <vCPUs_quantity> --memory <memory_in_MBs>
 </p>
 </blockquote>
 
+Operating system installation
+
+In the language, select “English” and use your keyboard layout.
+Go through the next steps, and do not update the installer (if asked).
+In “Guided storage configuration”, select the “Custom storage layout” option and create the partitions according to the table below:
+
 
 
