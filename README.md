@@ -89,6 +89,33 @@ Edit grub settings using the command:
 ```bash
 sudo nano /etc/default/grub
 ```
+Replace the GRUB_CMDLINE_LINUX=" " line with:
+```bash
+GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
+```
+Save the modified file and update grub:
+```bash
+sudo update-grub
+```
+Edit the network configuration file:
+```bash
+sudo nano /etc/netplan/00-installer-config.yaml
+```
+Modify the file so that it looks as this:
+Abaixo está um exemplo do arquivo de configuração `config.yml` usado em nosso projeto:
+
+```configure
+# Configurações do projeto
+database: mysql
+username: user
+password: pass
+host: localhost
+
+# Configurações de segurança
+security:
+  enable: true
+  secretKey: "12345"
+
 
 
 
