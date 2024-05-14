@@ -17,7 +17,7 @@ virsh net-list
 ```
 The expected result is:
 
-Name | State | Autostart | Autostart 
--------------|-------------|-------------|-------------
- default | active | yes | yes 
+| Name | State | Autostart | Autostart |
+|-------------|-------------|-------------|-------------|
+|default | active | yes | yes|
 
