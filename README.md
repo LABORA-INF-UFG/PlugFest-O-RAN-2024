@@ -79,7 +79,7 @@ Finally, activate the "Install OpenSSH server" option, proceed twice, and wait f
 
 ## Configurações adicionais na VM
 
-1. Updating the repository list
+**1. Updating the repository list**
 ```bash
 sudo apt update
 sudo apt upgrade
