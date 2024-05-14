@@ -69,6 +69,16 @@ Operating system installation
 In the language, select “English” and use your keyboard layout.
 Go through the next steps, and do not update the installer (if asked).
 In “Guided storage configuration”, select the “Custom storage layout” option and create the partitions according to the table below:
+| Partition - Format | Size |
+|-------------|-------------|
+|/boot - ext4 | 1 GB | 
+|/ - ext4 | ~19 GB | 
+
+
+
+
+
+
 
 
 
