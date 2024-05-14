@@ -1,5 +1,4 @@
-<p align="center"></p>
-# Tutorial for creating the PlugFest O-RAN 2024 Blueprint
+# Tutorial for creating the PlugFest O-RAN 2024 Blueprint <p align="center"></p>
 
 
 <p align="justify">
