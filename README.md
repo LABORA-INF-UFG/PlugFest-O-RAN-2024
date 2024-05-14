@@ -9,3 +9,9 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 ```bash
 sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients virt-manager
 ```
+
+## Configuring network on the host
+Before booting the VM, check if a network called “default” is listed using the following command:
+```bash
+virsh net-list
+```
