@@ -55,17 +55,9 @@ Below is the XML file for creating the default network used in the blueprints pr
 </blockquote>
 
 Creating a VM instance from the virt-install command:
-<pre>
-<code>
-virt-install --name <strong><VM_name></strong> –vcpus <vCPUs_quantity> --memory <memory_in_MBs> --disk size=<storage_in_GB> --cdrom <path_to_iso_ubuntu_server_20.04>
-</code>
-</pre>
-
-<pre>
-<code>
-sudo apt-get <strong>update</strong> # O comando <strong>update</strong> é crítico aqui
-</code>
-</pre>
+```bash
+virt-install --name <VM_name> –vcpus <vCPUs_quantity> --memory <memory_in_MBs> --disk size=<storage_in_GB> --cdrom <path_to_iso_ubuntu_server_20.04>
+```
 
 
 
