@@ -48,8 +48,6 @@ Below is the XML file for creating the default network used in the blueprints pr
   </ip>
 </network>
 ```
-```diff
-Note: The VM must be created using the 172.30.0.0/24 network, as the VM has a fixed IP that must be used to configure the Kubernetes cluster (172.30.0.174). This configuration allows the final VM to have a fixed internal network for use by the Kubernetes cluster and a dynamic external network for user access with any IP range.
-```
++ Note: The VM must be created using the 172.30.0.0/24 network, as the VM has a fixed IP that must be used to configure the Kubernetes cluster (172.30.0.174). This configuration allows the final VM to have a fixed internal network for use by the Kubernetes cluster and a dynamic external network for user access with any IP range.
 
 
