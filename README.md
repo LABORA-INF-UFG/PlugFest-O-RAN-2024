@@ -6,3 +6,6 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 
 ## Installing packages to create and manage qemu/libvirt VMs
+```bash
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients virt-manager
+```
