@@ -24,4 +24,9 @@ If the default network is created, delete the network using the command below:
 ```bash
 virsh net-destroy default
 ```
+Double-check that no networks are listed.
+```bash
+virsh net-list
+```
+
 
