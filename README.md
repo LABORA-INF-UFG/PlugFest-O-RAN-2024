@@ -32,4 +32,23 @@ After deleting the pre-configured default network, we will create a new default 
 ```bash
 virsh net-create <network_file_XML>
 ```
+Below is the XML file for creating the default network used in the blueprints project:
+```xml
+<network>
+<name>default</name>
+<uuid>652bafa1-f57e-4670-b40a-2c05e5e96645</uuid>
+<forward mode="nat"/>
+<bridge name="virbr0" stp="on" delay="0"/>
+<mac address="52:54:00:fc:2b:a8"/>
+<domain name="default"/>
+<ip address="172.30.0.1" netmask="255.255.255.0">
+<dhcp>
+<range start="172.30.0.1" end="172.30.0.254"/>
+</dhcp>
+</ip>
+</network>
+
+
+
+
 
