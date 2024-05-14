@@ -15,3 +15,7 @@ Before booting the VM, check if a network called “default” is listed using t
 ```bash
 virsh net-list
 ```
+The expected result is:
+Name      State    Autostart   Persistent
+--------------------------------------------
+ default   active   yes         yes
