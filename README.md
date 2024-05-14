@@ -187,5 +187,6 @@ Now, update your network settings:
 sudo netplan apply
 ```
 **5. Near-RT RIC Installation**
+
 João...
 
