@@ -104,17 +104,18 @@ sudo nano /etc/netplan/00-installer-config.yaml
 Modify the file so that it looks as this:
 Abaixo está um exemplo do arquivo de configuração `config.yml` usado em nosso projeto:
 
-```configure
-# Configurações do projeto
-database: mysql
-username: user
-password: pass
-host: localhost
-
-# Configurações de segurança
-security:
-  enable: true
-  secretKey: "12345"
+```yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+     dhcp4: no
+     addresses: [172.30.0.174/24]
+     gateway4: 172.30.0.1
+     nameservers:
+       addresses: [8.8.8.8,1.1.1.1]
+```
 
 
 
