@@ -58,8 +58,11 @@ Creating a VM instance from the virt-install command:
 ```bash
 virt-install --name <VM_name> –vcpus <vCPUs_quantity> --memory <memory_in_MBs> --disk size=<storage_in_GB> --cdrom <path_to_iso_ubuntu_server_20.04>
 ```
-
-
+<blockquote>
+<p align="justify">
+<strong>Note:</strong> For creating VMs to the Near-RT RIC from OSC, two vCPUs, six GB of RAM, and 20 GB of disk space are recommended.
+</p>
+</blockquote>
 
 
 
