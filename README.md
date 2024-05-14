@@ -74,6 +74,8 @@ In “Guided storage configuration”, select the “Custom storage layout” op
 |/boot - ext4 | 1 GB | 
 |/ - ext4 | ~19 GB | 
 
+After completing the partition configuration, create the operating system's default user. The user must be called **"openran-br"** and have the password **"openran-br"**. 
+Finally, activate the "Install OpenSSH server" option, proceed twice, and wait for the system to be installed.
 
 
 
