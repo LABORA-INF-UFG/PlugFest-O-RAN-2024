@@ -186,5 +186,6 @@ Now, update your network settings:
 ```bash
 sudo netplan apply
 ```
-
+**5. Near-RT RIC Installation**
+João...
 
