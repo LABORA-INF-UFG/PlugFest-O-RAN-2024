@@ -116,7 +116,37 @@ network:
      nameservers:
        addresses: [8.8.8.8,1.1.1.1]
 ```
-
+Once done, save the modified file, apply the new settings, and restart the VM:
+```bash
+sudo netplan apply
+```
+**3. Script to disable swap and forward logs**
+Create a file using the command:
+```bash
+sudo nano /etc/init.d/swap_off.sh
+```
+Add text to file:
+```bash
+#!/bin/sh
+sudo swapoff -a
+sudo sysctl -w kernel.printk="3 4 1 7"
+```
+Create the executable with permission:
+```bash
+sudo chmod +x /etc/init.d/swap_off.sh
+```
+Add the script created to the operating system startup routine:
+```bash
+sudo crontab -e
+```
+At the end of the file add the line:
+```bash
+@reboot /etc/init.d/swap_off.sh
+```
+Now, restart the machine:
+```bash
+sudo reboot
+```
 
 
 
