@@ -84,7 +84,11 @@ Finally, activate the "Install OpenSSH server" option, proceed twice, and wait f
 sudo apt update
 sudo apt upgrade
 ```
-
+**2. Configuring default network interface names**
+Edit grub settings using the command:
+```bash
+sudo nano /etc/default/grub
+```
 
 
 
