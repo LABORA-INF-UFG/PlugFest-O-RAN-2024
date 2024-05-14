@@ -17,8 +17,8 @@ virsh net-list
 ```
 The expected result is:
 
-`Name      State    Autostart   Persistent`
+`Name      State    Autostart   Persistent
 
-`-------------------------------------------- `
+--------------------------------------------
 
-`default   active   yes         yes`
+default   active   yes         yes`
