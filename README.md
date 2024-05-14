@@ -28,5 +28,8 @@ Double-check that no networks are listed.
 ```bash
 virsh net-list
 ```
-
+After deleting the pre-configured default network, we will create a new default network for creating the VM using an XML configuration file.
+```bash
+virsh net-create <network_file_XML>
+```
 
