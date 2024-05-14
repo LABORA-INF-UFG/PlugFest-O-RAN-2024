@@ -35,8 +35,8 @@ virsh net-create <network_file_XML>
 Below is the XML file for creating the default network used in the blueprints project:
 ```xml
 <network>
-<name>default</name>
-<uuid>652bafa1-f57e-4670-b40a-2c05e5e96645</uuid>
+  <name>default</name>
+  <uuid>652bafa1-f57e-4670-b40a-2c05e5e96645</uuid>
 <forward mode="nat"/>
 <bridge name="virbr0" stp="on" delay="0"/>
 <mac address="52:54:00:fc:2b:a8"/>
