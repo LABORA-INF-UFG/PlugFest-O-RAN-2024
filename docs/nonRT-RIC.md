@@ -33,3 +33,7 @@ dep/nonrtric/RECIPE_EXAMPLE/example_recipe.yaml
     storageClassName: local-path
 …
 ```
+Continue deploying the Non-RT RIC after cloning the repository following the steps described [here](https://wiki.o-ran-sc.org/display/RICNR/Release+I+-+Run+in+Kubernetes).
+
+
+
