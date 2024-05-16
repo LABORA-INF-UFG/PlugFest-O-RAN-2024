@@ -10,7 +10,7 @@ kubectl set image deployment/deployment-ricplt-vespamgr container-ricplt-vespamg
 kubectl rollout status deployment/deployment-ricplt-vespamgr  -n ricplt
 
 ```
-Next, we must install a tool to store the Non-RT RIC components. The option chosen was the Rancher local path, the documentation for which is available here. Rancher can be installed using the command:
+Next, we must install a tool to store the Non-RT RIC components. The option chosen was the Rancher local path, the documentation for which is available [here]([https://docs.o-ran-sc.org/projects/o-ran-sc-ric-plt-ric-dep/en/latest/installation-guides.html#installing-near-realtime-ric-in-ric-cluster](https://github.com/rancher/local-path-provisioner). Rancher can be installed using the command:
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.26/deploy/local-path-storage.yaml
 ```
