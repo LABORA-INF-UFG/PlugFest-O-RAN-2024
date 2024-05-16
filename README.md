@@ -22,7 +22,7 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 - Alexandre Huff (UTFPR)
 - Cristiano Bonato Both (UNISINOS)
 - Gustavo Zannata Bruno (UNISINOS)
-- João Joao F. Santos (Virginia Tech)
+- João F. Santos (Virginia Tech)
 <p align="center">
     <img src="/figs/Utfpr.png" height="60"/> <img src="/figs/vt.png" height="100"/> <img src="/figs/unisinos.png" height="100"/> <img src="/figs/openRAN@Brazil.png" height="70"/>
 </p>
