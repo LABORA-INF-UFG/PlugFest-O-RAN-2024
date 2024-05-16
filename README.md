@@ -6,6 +6,8 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 **1. [Creating and configurating a VM](/docs/creatingVM.md)**
    
-**5. Near-RT RIC Installation**
+**2. [Near-RT RIC installation and configuration](/docs/nearRT-RIC.md)**
 
+**3. [Non-RT RIC installation and configuration](/docs/nonRT-RIC.md)**
 
+**4. [Minimum SMO installation and configuration](/docs/SMO.md)**
