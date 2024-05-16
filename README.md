@@ -24,5 +24,5 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 - Gustavo Zannata Bruno (UNISINOS)
 - João F. Santos (Virginia Tech)
 <p align="center">
-    <img src="/figs/Utfpr.png" height="50"/> <img src="/figs/vt.png" height="80"/> <img src="/figs/unisinos.png" height="100"/> <img src="/figs/openRAN@Brazil.png" height="60"/>
+    <img src="/figs/Utfpr.png" height="50"/> <img src="/figs/vt.png" height="80"/> <img src="/figs/unisinos.png" height="100"/> <img src="/figs/openRAN@Brazil.png" height="70"/>
 </p>
