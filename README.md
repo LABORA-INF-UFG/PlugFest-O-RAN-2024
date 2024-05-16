@@ -8,5 +8,4 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 **5. Near-RT RIC Installation**
 
-João...
 
