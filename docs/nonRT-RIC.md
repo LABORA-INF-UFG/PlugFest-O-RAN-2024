@@ -1,39 +1,35 @@
-First, we must adjust the  a1mediator image from Near-RT RIC to be compatible with the Non-RT RIC:
+##  Install and configure Docker
 ```bash
-kubectl set image deployment/deployment-ricplt-a1mediator container-ricplt-a1mediator=alexandrehuff/a1mediator -n ricplt
-kubectl rollout status deployment/deployment-ricplt-a1mediator -n ricplt
-
+sudo apt install -y docker.io 
+sudo usermod -aG docker $USER && newgrp docker
 ```
-We also must adjust the vespamgr image from Near-RT RIC to be compatible with the ves-collector of our minimal SMO:
+## Download and install Minikube
 ```bash
-kubectl set image deployment/deployment-ricplt-vespamgr container-ricplt-vespamgr=zanattabruno/ric-plt-vespamgr:energy-saver -n ricplt
-kubectl rollout status deployment/deployment-ricplt-vespamgr  -n ricplt
-
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+sudo dpkg -i minikube_latest_amd64.deb
 ```
-Next, we must install a tool to store the Non-RT RIC components. The option chosen was the Rancher local path, the documentation for which is available [here](https://github.com/rancher/local-path-provisioner). Rancher can be installed using the command:
+## Start Minikube
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.26/deploy/local-path-storage.yaml
+minikube start --driver=docker
 ```
-We must clone the Non-RT RIC by following the steps described <a href="https://wiki.o-ran-sc.org/display/RICNR/Release+I+-+Run+in+Kubernetes#:~:text=helm/chartmuseum)-,Preparations,-Download%20the%20the">here</a>. Furthermore, we need to change all instances of storageClassName to local-path, as shown in the example in the file below, where there are six changes.
-```yaml
-dep/nonrtric/RECIPE_EXAMPLE/example_recipe.yaml
-…
-  volume1:
-    # Set the size to 0 if you do not need the volume (if you are using Dynamic Volume Provisioning)
-    size: 0
-    storageClassName: local-path
-    hostPath: /var/nonrtric/pms-storage
-  volume2:
-     # Set the size to 0 if you do not need the volume (if you are using Dynamic Volume Provisioning)
-    size: 0
-    storageClassName: local-path
-    hostPath: /var/nonrtric/ics-storage
-  volume3:
-    size: 0
-    storageClassName: local-path
-…
+## Download and install Kubelet 
+```bash
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+kubectl version --client
 ```
-Continue deploying the Non-RT RIC after cloning the repository following the steps described [here](https://wiki.o-ran-sc.org/display/RICNR/Release+I+-+Run+in+Kubernetes).
-
-
-
+## Clone the Non-RT RIC repo
+```bash
+git clone "https://gerrit.o-ran-sc.org/r/it/dep"
+```
+## Install the Chartmuseum and set up Helm
+```bash
+./dep/smo-install/scripts/layer-0/0-setup-charts-museum.sh
+./dep/smo-install/scripts/layer-0/0-setup-helm3.sh
+```
+## Install the Helm Recipes
+```bash
+cd dep/bin/
+sudo -E ./deploy-nonrtric -f ../nonrtric/RECIPE_EXAMPLE/example_recipe.yaml
+```
