@@ -14,8 +14,7 @@ Next, we must install a tool to store the Non-RT RIC components. The option chos
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.26/deploy/local-path-storage.yaml
 ```
-We must clone the Non-RT RIC by following the steps described <a href="https://wiki.o-ran-sc.org/display/RICNR/Release+I+-+Run+in+Kubernetes#:~:text=helm/chartmuseum)-,Preparations,-Download%20the%20the">here</a>
-. Furthermore, we need to change all instances of storageClassName to local-path, as shown in the example in the file below, where there are six changes.
+We must clone the Non-RT RIC by following the steps described <a href="https://wiki.o-ran-sc.org/display/RICNR/Release+I+-+Run+in+Kubernetes#:~:text=helm/chartmuseum)-,Preparations,-Download%20the%20the">here</a>. Furthermore, we need to change all instances of storageClassName to local-path, as shown in the example in the file below, where there are six changes.
 ```yaml
 dep/nonrtric/RECIPE_EXAMPLE/example_recipe.yaml
 …
