@@ -15,8 +15,8 @@ Next, we must install a tool to store the Non-RT RIC components. The option chos
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.26/deploy/local-path-storage.yaml
 ```
 We must clone the Non-RT RIC by following the steps described here. Furthermore, we need to change all instances of storageClassName to local-path, as shown in the example in the file below, where there are six changes.
-dep/nonrtric/RECIPE_EXAMPLE/example_recipe.yaml
 ```yaml
+dep/nonrtric/RECIPE_EXAMPLE/example_recipe.yaml
 …
   volume1:
     # Set the size to 0 if you do not need the volume (if you are using Dynamic Volume Provisioning)
