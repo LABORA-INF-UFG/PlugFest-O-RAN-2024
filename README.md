@@ -17,3 +17,12 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 **3. [Non-RT RIC installation and configuration](/docs/nonRT-RIC.md)**
 
 **4. [Minimum SMO installation and configuration](/docs/SMO.md)**
+
+## Credits
+- Alexandre Huff (UTFPR)
+- Cristiano Bonato Both (UNISINOS)
+- Gustavo Zannata Bruno (UNISINOS)
+- João Joao F. Santos (Virginia Tech)
+<p align="center">
+    <img src="UFES.png" height="60"/> <img src="UFMG.png" height="100"/> <img src="UFRGS.png" height="70"/> <img src="UNICAMP.png" height="80"/> <img src="/figs/unisinos.png" height="100"/>
+</p>
