@@ -11,4 +11,3 @@ kubectl rollout status deployment/deployment-ricplt-vespamgr  -n ricplt
 
 ```
 
-
