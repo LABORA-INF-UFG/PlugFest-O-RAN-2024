@@ -22,15 +22,9 @@
     </p>
   </div>
 
-<pre><code class="hljs language-markdown"><span class="hljs-section"># A first-level heading</span>
-<span class="hljs-section">## A second-level heading</span>
-<span class="hljs-section">### A third-level heading</span>
-</code></pre>
 
 <pre><code class="hljs language-markdown">Use <span class="hljs-code">`git status`</span> to list all new or modified files that haven't yet been committed.
 </code></pre>
-<p><picture><source srcset="/assets/cb-24556/mw-1440/images/help/writing/inline-code-rendered.webp 2x" type="image/webp"><img src="/assets/cb-24556/images/help/writing/inline-code-rendered.png" alt="Captura de tela do GitHub Markdown renderizado mostrando a aparência dos caracteres cercados por aspas invertidas. As palavras &#x22;git status&#x22; aparecem em uma face de tipos de largura fixa realçadas em cinza claro."></picture></p>
-<p>Para formatar código ou texto no próprio bloco distinto, use aspas triplas.</p>
 <pre>Some basic Git commands are:
 ```
 git status
