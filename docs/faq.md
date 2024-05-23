@@ -1,3 +1,9 @@
+pre {
+   display: flex;
+   white-space: normal;
+   word-break: break-word;
+}
+
 ## FAQ
 
 - **Why do we install modified versions of VespaMgr on the Near-RT RIC❓**
