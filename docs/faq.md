@@ -1,6 +1,6 @@
 ## FAQ
 
-- **Why do we install modified versions of VespaMgr on the Near-RT RIC?**
+- **Why do we install modified versions of VespaMgr on the Near-RT RIC❓**
   <div style="background-color: #28a745; padding: 10px; border-radius: 5px;">
     <p align="justify" style="color: white;">
       The default configurations available in the O-RAN Software Community (OSC) for these components are inadequate for our specific requirements. The standard versions of VespaMgr lack the flexibility and customization options necessary for our deployment. Here are the key reasons:
