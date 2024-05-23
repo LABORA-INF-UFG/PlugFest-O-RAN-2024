@@ -16,8 +16,8 @@ These modifications ensure that the Near-RT RIC can function effectively within 
 
 - **❓ Como posso instalar o projeto?**
   - <div style="background-color: #333; color: #fff; padding: 10px; border-radius: 5px;">
-    Você pode instalar o projeto usando o comando:
     <code style="display: block; background-color: #444; color: #fff; padding: 10px; border-radius: 5px;">
+    Você pode instalar o projeto usando o comando:
     npm install nome-do-projeto
     </code>
     </div>
