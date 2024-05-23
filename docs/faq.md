@@ -24,3 +24,9 @@
    <p align="justify">
    By default, Kubernetes does not provide a storage class essential for enabling pods to utilize persistent storage. To address this, the "RECIPE_EXAMPLE/example_recipe.yaml" file recommends using a storage class. The Local Path Provisioner from Rancher is particularly advantageous due to its ease of use and straightforward deployment. This provisioner allows us to efficiently configure persistent storage for our Kubernetes pods, ensuring reliable and consistent storage management for the Non-RT RIC components.
    </p>
+
+
+**4. Was the modification of the Policy Management Service only to find the address of the A1 Mediator from the previous step❓**
+   <p align="justify">
+      In integrating the Near-RT RIC with the Non-RT RIC, it is necessary to inform the Non-RT RIC of the address of the A1 service in the Near-RT RIC that will be connected. The Policy Management Service was modified specifically to locate and connect to the A1 Mediator's address, facilitating seamless communication and integration between the Near-RT and Non-RT RIC components. This modification ensures that policy management can effectively coordinate across the RIC layers.
+   </p>
