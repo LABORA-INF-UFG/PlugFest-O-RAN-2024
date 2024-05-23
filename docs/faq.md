@@ -1,6 +1,7 @@
 ## FAQ
 
 - **Why do we install modified versions of VespaMgr on the Near-RT RIC?**
+  
    The default configurations available in the O-RAN Software Community (OSC) for these components are inadequate for our specific requirements. The standard versions of VespaMgr lack the flexibility and customization options necessary for our deployment. Here are the key reasons:
   - Configuration Flexibility:
     VespaMgr's default settings do not allow dynamic configuration changes. For example, the URL of the VES collector is hardcoded and cannot be modified through configuration files like ConfigMap.
