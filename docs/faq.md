@@ -28,5 +28,11 @@
 
 **4. Was the modification of the Policy Management Service only to find the address of the A1 Mediator from the previous step❓**
    <p align="justify">
-      In integrating the Near-RT RIC with the Non-RT RIC, it is necessary to inform the Non-RT RIC of the address of the A1 service in the Near-RT RIC that will be connected. The Policy Management Service was modified specifically to locate and connect to the A1 Mediator's address, facilitating seamless communication and integration between the Near-RT and Non-RT RIC components. This modification ensures that policy management can effectively coordinate across the RIC layers.
+      In integrating the Near-RT RIC with the Non-RT RIC, it is necessary to inform the Non-RT RIC of the address of the A1 service to the Near-RT RIC that will be connected. The Policy Management Service was modified to locate and connect to the A1 Mediator's address, facilitating seamless communication and integration between the Near-RT and Non-RT RIC components. This modification ensures that policy management can effectively coordinate across the RIC layers.
+   </p>
+
+**5. Are the VesCollector, Kafka, Prometheus-Blackbox-Exporter, InfluxDB, Chronograf, and InfluxDB-Connector all vanilla components of the SMO? Is there anything outside of what comes with the SMO, and is this all we need❓**
+   <p align="justify">
+      The SMO components from O-RAN SC are deprecated, with the latest version being 0.1.0. They do not support all types of messages defined by the VES API. Additionally, the SMO from ONAP is large, complex, and challenging to integrate with vespamgr of the Near-RT RIC from O-RAN SC. 
+To address these limitations, we developed our own VesCollector and InfluxDBConnector, following the patterns of the SMO from O-RAN. This customized approach allows us to meet our specific requirements more effectively. Alongside these components, we use Kafka (as a data river), Prometheus-Blackbox-Exporter, InfluxDB (as a data lake), and Chronograf. They are essential for our operational needs. If this set of components suffices, a tailored recipe or an override YAML with these components can be created to streamline deployment and integration.
    </p>
