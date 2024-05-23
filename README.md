@@ -18,6 +18,8 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 **4. [Minimum SMO installation and configuration](/docs/SMO.md)**
 
+**5. [Frequently Asked Question (FAQ)](/docs/faq.md)**
+
 ## Credits
 - Alexandre Huff (UTFPR)
 - Cristiano Bonato Both (UNISINOS)
