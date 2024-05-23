@@ -23,8 +23,7 @@
   </div>
 
 
-<pre><code class="hljs language-markdown">Use <span class="hljs-code">`git status`</span> to list all new or modified files that haven't yet been committed.
-</code></pre>
+
 <pre>Some basic Git commands are:
 ```
 git status
