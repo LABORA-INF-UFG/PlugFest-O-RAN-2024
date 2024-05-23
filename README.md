@@ -20,6 +20,12 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 **5. [Frequently Asked Question (FAQ)](/docs/faq.md)**
 
+**6. [Image](xxx)**
+
+**7. [Demonstration](xxx)**
+
+**8. [Use Case - Handover](xxx)**
+
 ## Credits
 - Alexandre Huff (UTFPR)
 - Cristiano Bonato Both (UNISINOS)
