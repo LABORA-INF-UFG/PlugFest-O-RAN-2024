@@ -14,8 +14,7 @@ These modifications ensure that the Near-RT RIC can function effectively within 
 
 ## teste
 
-- **❓ Como posso instalar o projeto?**
-  - <div style="background-color: #333; color: #fff; padding: 10px; border-radius: 5px;">
+ <div style="background-color: #333; color: #fff; padding: 10px; border-radius: 5px;">
     <p align="justify" style="margin: 0;">
       oiioioioioioioioioio
     </p>
