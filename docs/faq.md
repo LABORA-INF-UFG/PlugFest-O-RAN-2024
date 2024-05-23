@@ -15,6 +15,6 @@
       - <p align="justify"> These modifications ensure that the Near-RT RIC can function effectively within our infrastructure, addressing the limitations present in the standard OSC versions.
    </p>
 
-
+**2. Why do we install modified versions of the A1 Mediator on the Near-RT RIC❓**
 
 
