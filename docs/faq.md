@@ -1,6 +1,6 @@
 ## FAQ
 
-- **Why do we install modified versions of VespaMgr on the Near-RT RIC❓**
+**1. Why do we install modified versions of VespaMgr on the Near-RT RIC❓**
    <p align="justify">
    The default configurations available in the O-RAN Software Community (OSC) for these components are inadequate for our specific requirements. The standard versions of VespaMgr lack the flexibility and customization options necessary for our deployment. Here are the key reasons:
    </p>
