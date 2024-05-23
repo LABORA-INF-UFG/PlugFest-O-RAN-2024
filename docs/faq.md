@@ -17,12 +17,12 @@
 
 **2. Why do we install modified versions of the A1 Mediator on the Near-RT RIC❓**
    <p align="justify">
-   The current release of the Non-RT RIC does not support version 2 of the A1 API and only supports version 1. Additionally, the last of the A1 mediator image with version 1 of the A1 API had a bug in the RMR message, where policy instances were sent without the subId (policy subscription identification), and due to this, policy instances don't arrive correctly on xApps. Our modified version addresses this issue by ensuring policy instances include the necessary ID. This modification is crucial for maintaining proper functionality and integration within our RIC infrastructure.
+   The current release of the Non-RT RIC does not support version 2 of the A1 API and only supports version 1. Additionally, the last of the A1 mediator image with version 1 of the A1 API had a bug in the RMR message, where policy instances were sent without the subId (policy subscription identification), and due to this, policy instances do not arrive correctly on xApps. Our modified version addresses this issue by ensuring policy instances include the necessary ID. This modification is crucial for maintaining proper functionality and integration within our RIC infrastructure.
    </p>
 
 **3. Why do we need to install a tool to store the non-RT RIC components❓**
    <p align="justify">
-   By default, Kubernetes does not provide a storage class essential for enabling pods to utilize persistent storage. To address this, the "RECIPE_EXAMPLE/example_recipe.yaml" file recommends using a storage class. The Local Path Provisioner from Rancher is particularly advantageous due to its ease of use and straightforward deployment. This provisioner allows us to efficiently configure persistent storage for our Kubernetes pods, ensuring reliable and consistent storage management for the Non-RT RIC components.
+   By default, Kubernetes does not provide a storage class essential for enabling pods to utilize persistent storage. The "RECIPE_EXAMPLE/example_recipe.yaml" file recommends using a storage class to address this persistence. The Local Path Provisioner from Rancher is particularly advantageous due to its ease of use and straightforward deployment. This provisioner allows us to efficiently configure persistent storage for our Kubernetes pods, ensuring reliable and consistent storage management for the Non-RT RIC components.
    </p>
 
 
@@ -31,8 +31,8 @@
       In integrating the Near-RT RIC with the Non-RT RIC, it is necessary to inform the Non-RT RIC of the address of the A1 service to the Near-RT RIC that will be connected. The Policy Management Service was modified to locate and connect to the A1 Mediator's address, facilitating seamless communication and integration between the Near-RT and Non-RT RIC components. This modification ensures that policy management can effectively coordinate across the RIC layers.
    </p>
 
-**5. Are the VesCollector, Kafka, Prometheus-Blackbox-Exporter, InfluxDB, Chronograf, and InfluxDB-Connector all vanilla components of the SMO? Is there anything outside of what comes with the SMO, and is this all we need❓**
+**5. Are the VesCollector, Kafka, Prometheus-Blackbox-Exporter, InfluxDB, Chronograf, and InfluxDB-Connector all vanilla components of the SMO❓ Is there anything outside of what comes with the SMO, and is this all we need❓**
    <p align="justify">
-      The SMO components from O-RAN SC are deprecated, with the latest version being 0.1.0. They do not support all types of messages defined by the VES API. Additionally, the SMO from ONAP is large, complex, and challenging to integrate with vespamgr of the Near-RT RIC from O-RAN SC. 
-To address these limitations, we developed our own VesCollector and InfluxDBConnector, following the patterns of the SMO from O-RAN. This customized approach allows us to meet our specific requirements more effectively. Alongside these components, we use Kafka (as a data river), Prometheus-Blackbox-Exporter, InfluxDB (as a data lake), and Chronograf. They are essential for our operational needs. If this set of components suffices, a tailored recipe or an override YAML with these components can be created to streamline deployment and integration.
+      The SMO components from O-RAN SC are deprecated, with the latest version being 0.1.0. They do not support all types of messages defined by the VES API. Additionally, the SMO from ONAP is large, complex, and challenging to integrate with the VespaMgr of the Near-RT RIC from O-RAN SC. 
+To overcome these limitations, we developed our own VesCollector and InfluxDBConnector, following the patterns of the SMO from O-RAN. This customized approach allows us to meet our specific requirements more effectively. Alongside these components, we use Kafka (as a data river), Prometheus-Blackbox-Exporter, InfluxDB (as a data lake), and Chronograf. They are essential for our operational needs. If this set of components suffices, a tailored recipe or an override YAML with these components can be created to streamline deployment and integration.
    </p>
