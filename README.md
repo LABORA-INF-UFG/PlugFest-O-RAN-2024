@@ -31,6 +31,7 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 - Cristiano Bonato Both (UNISINOS)
 - Gustavo Zanatta Bruno (UNISINOS)
 - João F. Santos (Virginia Tech)
+- Thiago Rafael Becker (UNISINOS)
 <p align="center">
     <img src="/figs/Utfpr.png" height="50"/> <img src="/figs/vt.png" height="80"/> <img src="/figs/unisinos.png" height="100"/> <img src="/figs/openRAN@Brazil.png" height="70"/>
 </p>
