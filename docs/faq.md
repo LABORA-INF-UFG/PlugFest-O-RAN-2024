@@ -1,7 +1,7 @@
 ## FAQ
 
 - **❓ Why do we install modified versions of VespaMgr on the Near-RT RIC?**
-  - <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+  <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
    The default configurations available in the O-RAN Software Community (OSC) for these components are inadequate for our specific requirements. The standard versions of VespaMgr lack the flexibility and customization options necessary for our deployment. Here are the key reasons:
   - Configuration Flexibility:
     <pre style="background-color: #333; color: #fff; padding: 10px; border-radius: 5px;">
