@@ -24,7 +24,7 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 **7. [Demonstration](https://youtu.be/l9ghO7ONcgc)**
 
-**8. [Use Case - Handover](/docs/UseCase.md)**
+**8. [Use Case - Energy Savings](/docs/UseCase.md)**
 
 ## Credits
 - Alexandre Huff (UTFPR)
