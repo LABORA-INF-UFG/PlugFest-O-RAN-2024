@@ -4,6 +4,8 @@
 ToDo
 </p>
 
+Minimum SMO installation and configuration
+
 <p align="justify">
 </p>
 <p align="center">
