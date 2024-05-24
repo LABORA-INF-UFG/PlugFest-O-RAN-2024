@@ -16,7 +16,7 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 **3. [Non-RT RIC installation and configuration](/docs/nonRT-RIC.md)**
 
-**4. [Minimum SMO installation and configuration](/docs/SMO.md)**
+**4. [Integrating Near-RT RIC and Non-RT RIC](/docs/integration_test.md)**
 
 **5. [Frequently Asked Question (FAQ)](/docs/faq.md)**
 
