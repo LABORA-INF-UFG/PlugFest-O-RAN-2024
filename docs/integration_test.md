@@ -151,7 +151,7 @@ curl -v -X PUT "http://<a1_mediator_http_ip>/a1-policy/v2/policies" \
 ```
 Which should return an HTTP code 201, indicating the policy instance was registered successfully.
 
-## 3. Verify 
+## 3. Verify Policy Propagation
 
 FInally, we can check the policy instance being propagated from the Non- to the Near-RT RIC.
 
