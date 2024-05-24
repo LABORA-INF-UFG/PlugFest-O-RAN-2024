@@ -1,13 +1,13 @@
 <h1 align="center">Handover use case</h1>
 
 <p align="justify">
-</p>
-<p align="center">
-    <img src="/figs/Handover.png"/> 
+ToDo
 </p>
 
 <p align="justify">
-ToDo
+</p>
+<p align="center">
+    <img src="/figs/Handover.png"/> 
 </p>
 
 **[Demonstration](https://youtu.be/l9ghO7ONcgc)**
