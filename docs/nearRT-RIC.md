@@ -1,7 +1,7 @@
 ## Install and configure Docker
 ```bash
 sudo apt install -y docker.io 
-sudo usermod -aG docker $USER && newgrp docker
+sudo usermod -aG docker $USER && newgrp docker &
 ```
 ## Download and install Minikube
 ```bash
@@ -27,9 +27,7 @@ wget https://get.helm.sh/chartmuseum-v0.13.1-linux-amd64.tar.gz
 tar xvzpf helm-v3.11.2-linux-amd64.tar.gz
 tar xvzpf chartmuseum-v0.13.1-linux-amd64.tar.gz
 mkdir -p ~/.local/bin
-cp linux-amd64/chartmuseum linux-amd64/helm ~/.local/bin
-echo "export PATH=$PATH:~/.local/bin/" >> ~/.bashrc
-source ~/.bashrc
+sudo cp linux-amd64/chartmuseum linux-amd64/helm /usr/local/bin/
 ```
 ## Install the Chartmuseum Push plugin
 ```bash
@@ -37,11 +35,12 @@ helm plugin install https://github.com/chartmuseum/helm-push
 ```
 ## Start Chartmuseum 
 ```bash
-chartmuseum --debug --port 6873 --storage local --storage-local-rootdir $HOME/helm/chartsmuseum/ &
+chartmuseum --debug --port 18080 --storage local --storage-local-rootdir $HOME/helm/chartsmuseum/ &
+sleep 3
 ```
 ## Set up local Helm repository 
 ```bash
-helm repo add local http://localhost:6873/
+helm repo add local http://localhost:18080/
 helm repo add influxdata https://helm.influxdata.com
 ```
 ## Clone and prepare Near-RT RIC
@@ -64,7 +63,7 @@ git clone "https://gerrit.o-ran-sc.org/r/ric-plt/appmgr" ~/appmgr
 cd ~/appmgr/xapp_orchestrater/dev/xapp_onboarder
 sudo apt install -y python3-pip
 pip3 install ./
-echo "export CHART_REPO_URL=http://localhost:6873" >> ~/.bashrc
+echo "export CHART_REPO_URL=http://localhost:18080" >> ~/.bashrc
 source ~/.bashrc
 eval $(minikube -p minikube docker-env)
 ```
