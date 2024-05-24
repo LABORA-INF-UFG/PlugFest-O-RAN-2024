@@ -20,7 +20,7 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 **5. [Frequently Asked Question (FAQ)](/docs/faq.md)**
 
-**6. [VirtualBox Image](xxx)**
+**6. [VirtualBox Image](/docs/accessingVM.md)**
 
 **7. [Demonstration](https://youtu.be/l9ghO7ONcgc)**
 
