@@ -73,3 +73,6 @@ source ~/.bashrc
 ```bash
 eval $(minikube -p minikube docker-env)
 ```
+
+## Note: 
+If installing both the Near- and Non-RT RICs on the same machine, please follow the steps of the Non-RT RIC instruction first and then continue here from step #9. 
