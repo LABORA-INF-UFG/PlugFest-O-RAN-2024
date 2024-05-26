@@ -35,6 +35,7 @@ helm install kafkdrop kafdrop/ -n smo
 <p align="justify">
 Deploy the exports for additional metrics, such as latencies that are exported to Prometheus through node-exporter and information about Kubernetes node resources that are exported through black box exporter:
 </p>
+
 ```bash
 cd ves-collector/extras/prometheus/configs
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
