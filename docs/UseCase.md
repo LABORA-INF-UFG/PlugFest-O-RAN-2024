@@ -76,4 +76,5 @@ Restart the VM and verify that the VM has internet access and that the pods are 
 </p>
 </blockquote>
 
-**[Demonstration](https://youtu.be/l9ghO7ONcgc)**
+
+***[Demonstration](https://youtu.be/l9ghO7ONcgc)***
