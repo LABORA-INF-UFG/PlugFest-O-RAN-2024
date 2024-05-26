@@ -1,7 +1,7 @@
 <h1 align="center">Energy Savings use case</h1>
 
 <p align="justify">
-ToDo
+The use case emphasizes energy savings by integrating SMO, Near-RT RIC, Non-RT RIC, xApps, and rApps. This integration ensures that energy-saving policies are formulated based on comprehensive data analysis and implemented effectively, promoting the network performance and minimizing energy consumption.
 </p>
 
 Minimum SMO installation and configuration
