@@ -13,3 +13,9 @@ The use case emphasizes energy savings by integrating SMO, Near-RT RIC, Non-RT R
 **[Demonstration](https://youtu.be/l9ghO7ONcgc)**
 
 Minimum SMO installation and configuration
+
+
+## Installing packages to create and manage qemu/libvirt VMs
+```bash
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients virt-manager
+```
