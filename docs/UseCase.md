@@ -10,8 +10,6 @@ The use case emphasizes energy savings by integrating SMO, Near-RT RIC, Non-RT R
     <img src="/figs/Energy.png"/> 
 </p>
 
-**[Demonstration](https://youtu.be/l9ghO7ONcgc)**
-
 ## Minimum SMO installation and configuration
 <p align="justify">
 First, we need to adjust the vesmgr image so that it is compatible with the new metrics that will be stored in Prometheus and exported to SMO via VES:
@@ -66,6 +64,16 @@ helm install influxdb-connector influxdb-connector/ -n smo
 
 Restart the VM and verify that the VM has internet access and that the pods are running.
 
-NOTE 1: After a few minutes, all pods must display a “Running” STATUS.
+<blockquote>
+<p align="justify">
+<strong>Note 1:</strong> After a few minutes, all pods must display a “Running” STATUS.
+</p>
+</blockquote>
 
-NOTE 2: After the pods have the “Running” STATUS, sometime later, it is common for some pods to restart or present the “CrashLoopBackOff” STATUS, mainly e2term, a1mediator, and e2mgr. This behavior occurs due to OSC's Near-RT RIC implementation, not blueprint configurations.
+<blockquote>
+<p align="justify">
+<strong>Note 2:</strong> After the pods have the “Running” STATUS, sometime later, it is common for some pods to restart or present the “CrashLoopBackOff” STATUS, mainly e2term, a1mediator, and e2mgr. This behavior occurs due to OSC's Near-RT RIC implementation, not blueprint configurations.
+</p>
+</blockquote>
+
+**[Demonstration](https://youtu.be/l9ghO7ONcgc)**
