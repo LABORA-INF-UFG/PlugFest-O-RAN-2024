@@ -18,13 +18,13 @@ This guideline provides a detailed tutorial for creating and configuring the blu
 
 **4. [Integrating Near-RT RIC and Non-RT RIC](/docs/integration_test.md)**
 
-**5. [Frequently Asked Question (FAQ)](/docs/faq.md)**
+**5. [VirtualBox Image](/docs/accessingVM.md)**
 
-**6. [VirtualBox Image](/docs/accessingVM.md)**
+**6. [Demonstration](https://youtu.be/l9ghO7ONcgc)**
 
-**7. [Demonstration](https://youtu.be/l9ghO7ONcgc)**
+**7. [Use Case - Energy Savings](/docs/UseCase.md)**
 
-**8. [Use Case - Energy Savings](/docs/UseCase.md)**
+**8. [Frequently Asked Question (FAQ)](/docs/faq.md)**
 
 ## Credits
 - Alexandre Huff (UTFPR)
