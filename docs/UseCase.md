@@ -13,9 +13,59 @@ The use case emphasizes energy savings by integrating SMO, Near-RT RIC, Non-RT R
 **[Demonstration](https://youtu.be/l9ghO7ONcgc)**
 
 ## Minimum SMO installation and configuration
+<p align="justify">
+First, we need to adjust the vesmgr image so that it is compatible with the new metrics that will be stored in Prometheus and exported to SMO via VES:
+</p>
 
-
-## Installing packages to create and manage qemu/libvirt VMs
 ```bash
-sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients virt-manager
+kubectl set image deployment/deployment-ricplt-vespamgr container-ricplt-vespamgr=zanattabruno/ric-plt-vespamgr:0.1 -n ricplt
+kubectl rollout status deployment/deployment-ricplt-a1mediator -n ricplt
 ```
+
+Create in the namespace for installing the minimum SMO components:
+```bash
+kubectl create namespace smo
+```
+
+Deploy Kafka and its kafdrop webui (data river):
+```bash
+git clone https://github.com/zanattabruno/ves-collector.git
+cd ves-collector/extras
+helm install kafka kafka/ -n smo
+helm install kafkdrop kafdrop/ -n smo
+```
+<p align="justify">
+Deploy the exports for additional metrics, such as latencies that are exported to Prometheus through node-exporter and information about Kubernetes node resources that are exported through black box exporter:
+</p>
+```bash
+cd ves-collector/extras/prometheus/configs
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update 
+helm upgrade --install blackbox-node1 prometheus-community/prometheus-blackbox-exporter -f values-blackbox1.yaml -n ricinfra
+```
+
+Deploy ves-collector:
+```bash
+cd ../ves-collector/helm
+helm install ves-collector ves-collector/ -n smo
+```
+
+Deploy influxdb and its webui (data lake):
+```bash
+git clone https://github.com/zanattabruno/influxdb-connector.git
+cd influxdb-connector/extras
+helm install influxdb influxdb/ -n smo
+helm install chronograf chronograf/ -n smo
+```
+
+Deploy influxdb-connector:
+```bash
+cd ../influxdb-connector/helm
+helm install influxdb-connector influxdb-connector/ -n smo
+```
+
+Restart the VM and verify that the VM has internet access and that the pods are running.
+
+NOTE 1: After a few minutes, all pods must display a “Running” STATUS.
+
+NOTE 2: After the pods have the “Running” STATUS, sometime later, it is common for some pods to restart or present the “CrashLoopBackOff” STATUS, mainly e2term, a1mediator, and e2mgr. This behavior occurs due to OSC's Near-RT RIC implementation, not blueprint configurations.
