@@ -181,3 +181,4 @@ Now, update your network settings:
 sudo netplan apply
 ```
 
+**[Demonstration](https://youtu.be/91KGYsaKU8s)**
