@@ -78,4 +78,4 @@ Restart the VM and verify that the VM has internet access and that the pods are 
 </blockquote>
 
 
-**[Demonstration of the Energy Savings use case](https://youtu.be/l9ghO7ONcgc)**
+**[Demonstration of the Energy Savings use case](https://www.youtube.com/watch?v=77nJ2helGl4&t=6s)**
