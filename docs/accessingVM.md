@@ -9,3 +9,16 @@ To download the VM image in qcow2 format, please click the link below:
 
 [Blueprint VM Image](https://virginiatech-my.sharepoint.com/:u:/g/personal/joaosantos_vt_edu/EThwYC1W_-ZFtWjtBUBmSPgBnvAuicRdmVmr1hVU8j57ew?e=qM9uPl) [60GB]
 
+
+The VM's credentials are as follows:
+
+```bash
+Login: experimenter
+Password: blueprint
+```
+
+To start the Kubernetes cluster, run the following command: 
+
+```bash
+minikube start --driver=docker --mount --mount-string="/home/$USER/persistent_storage/:/var/nonrtric" --mount-uid="nonrtric" --mount-gid="nonrtric"
+```
