@@ -7,7 +7,7 @@ The VM contains an operational deployment of Near- and Non-RT RICs ready for tes
 
 To download the VM image in qcow2 format, please click the link below:
 
-[Blueprint VM Image](https://virginiatech-my.sharepoint.com/:u:/g/personal/joaosantos_vt_edu/EThwYC1W_-ZFtWjtBUBmSPgBnvAuicRdmVmr1hVU8j57ew?e=qM9uPl) [60GB]
+[Blueprint VM Image](https://virginiatech-my.sharepoint.com/:u:/g/personal/joaosantos_vt_edu/EThwYC1W_-ZFtWjtBUBmSPgB63PVfJpnv-DdHwxiuGPSMg?e=jGPdju) [60GB]
 
 
 The VM's credentials are as follows:
